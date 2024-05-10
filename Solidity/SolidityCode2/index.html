@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting DApp</title>
+</head>
+<body>
+    <h1>欢迎来到投票 DApp</h1>
+    <div>
+        <label for="candidateName">请输入候选人姓名：</label>
+        <input type="text" id="candidateName" placeholder="候选人姓名">
+        <button id="voteBtn">投票</button>
+    </div>
+
+    <div id="result"></div>
+
+    <div>
+        <label for="accountDropdown">选择账户并切换账户：</label>
+        <select id="accountDropdown"></select>
+        <button id="changeAccountBtn">切换账户</button>
+    </div>
+
+    <div>
+        <label for="queryCandidate">请输入候选人姓名：</label>
+        <input type="text" id="queryCandidate" placeholder="候选人姓名">
+        <button id="queryBtn">查询</button>
+    </div>
+
+    <div id="queryResult"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
